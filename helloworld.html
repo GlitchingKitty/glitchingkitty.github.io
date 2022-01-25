@@ -1,0 +1,57 @@
+<html>
+ <head>
+  <title>Old Tab</title>
+  <style> 
+   body {
+    background-color: lightblue;
+    }
+   h1 {
+    color: navy;
+    text-align: center;
+    font-size: 40px;
+   }
+   .veggieBg {
+    background-color: rgba(5,200,150,0.6);
+    color: black;
+    text-align: center;
+    font-size: 27px;
+    border-radius: 50px;
+    font-family:"Lucida Handwriting", "Brush Script MT", cursive;
+  }
+   #button {
+    background-color: orange;
+    height: 50px;
+    width: 60px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 7px;
+    color: black;
+    margin: 0 auto;
+  }
+
+  #button:hover {
+   cursor:pointer;
+  }
+  </style>
+ </head>
+
+ <body>
+  <h1> Carrot Club! </h1>
+  <p class="veggieBg"> Welcome to this page! Make sure to eat lots of veggies! Veggies are good for your health. Carrots!
+To learn about carrots, go click the button below: </p>
+
+  <div id="button" onclick="myFunction()"> Click me! </div>
+
+  <img src="carrot-removebg-preview.png"></img>
+ </body>
+
+ <script>
+ 
+ function myFunction() {
+   var name = prompt('Sorry. No carrots for you. Please tell me your name to continue.')
+  if (name != null) {
+    alert(name + ', this page has malfunctioned. Please check again in a while. Goodbye!')
+   }
+ }
+ </script>
+</html>
