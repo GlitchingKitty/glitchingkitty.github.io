@@ -1,0 +1,67 @@
+<html>
+ <head>
+  <title>Old Tab</title>
+  <style>
+   h1 {
+ font-family: cursive;
+ text-align:center;
+}
+p.moveRight {
+ margin-left: 500px;
+}
+   /* Add a rotten banana background color to the top navigation */
+.topnav {
+  background-color: #C09D53;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav p {
+  float: left;
+  color: #F4CE7E;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor:pointer;
+  font-family: cursive;
+}
+
+/* Change the color of links on hover */
+.topnav p:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius:30px;
+}
+
+/* Add a color to the active/current link */
+.topnav p.active {
+  background-color: #F4CE7E;
+  color: white;
+  border-radius: 30px;
+  
+}
+  </style>
+ </head>
+ <body>
+  <div class="topnav">
+   <p class="moveRight" onclick="goHome()">Home</p>
+   <p class="active" onclick="newsPage()">News</p>
+   <p onclick="games()">Games</p>
+   <p onclick="bananaGallery()">Banana Gallery</p>
+</div>
+  <h1>Here's the latest news: </h1>
+ </body>
+ <script>
+  function goHome() {
+   window.location.replace("bananaPage.html")
+  }
+  function games() {
+   window.location.replace("bananagames.html")
+  } 
+  function bananaGallery() {
+   window.location.replace("gallery.html")
+  }
+ </script>
+</html>
